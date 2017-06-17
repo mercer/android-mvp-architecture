@@ -67,12 +67,12 @@ public class BlogAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 
         switch (viewType) {
             case VIEW_TYPE_NORMAL:
-                return new ViewHolder(
-                        LayoutInflater.from(parent.getContext()).inflate(R.layout.item_blog_view, parent, false));
+                return new ViewHolder(LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.item_blog_view, parent, false));
             case VIEW_TYPE_EMPTY:
             default:
-                return new EmptyViewHolder(
-                        LayoutInflater.from(parent.getContext()).inflate(R.layout.item_empty_view, parent, false));
+                return new EmptyViewHolder(LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.item_empty_view, parent, false));
         }
     }
 
