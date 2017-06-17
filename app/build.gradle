@@ -111,3 +111,9 @@ dependencies {
 configurations.all {
     resolutionStrategy.force "com.android.support:support-annotations:$supportLibraryVersion"
 }
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
